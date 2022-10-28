@@ -67,21 +67,21 @@
   display: none;
 }
 .container .slide-container:nth-child(1) .slide {
-  background-image: url(/assets/medium-shot-man-wearing-vr-glasses.jpg);
+  background-image: url(assets/medium-shot-man-wearing-vr-glasses.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 .container .slide-container:nth-child(2) .slide {
-  background-image: url(/assets/woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+  background-image: url(assets/woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
 }
 .container .slide-container:nth-child(3) .slide {
-  background-image: url(/assets/closeup-of-woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+  background-image: url(assets/closeup-of-woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
