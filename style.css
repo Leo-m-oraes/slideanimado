@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.container .slide-container .slide {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem 9%;
+  padding-bottom: 7rem;
+}
+
+.container .slide-container .slide .content {
+  flex: 1 1 350px;
+  animation: slideContent .4s linear .4s backwards;
+}
+
+@keyframes slideContent{0%{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+}
+
+.container .slide-container .slide .content h3 {
+  font-size: 3.5rem;
+  color: #f4a6f6;
+}
+.container .slide-container .slide .content p {
+  font-size: 1.6rem;
+  color: #ffff;
+  width: 40%;
+  height: 10%;
+}
+
+.container .slide-container .slide .content .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #8932c3;
+  color: #ffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.9rem 4rem;
+  border-radius: 0.5rem;
+  border: 2px solid #8932c3;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.container .slide-container .slide .content .btn:hover {
+  background: #a355d7;
+  border: 2px solid #a355d7;
+}
+
+.container .slide-container {
+  display: none;
+}
+.container .slide-container:nth-child(1) .slide {
+  background-image: url(/assets/medium-shot-man-wearing-vr-glasses.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.container .slide-container:nth-child(2) .slide {
+  background-image: url(/assets/woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.container .slide-container:nth-child(3) .slide {
+  background-image: url(/assets/closeup-of-woman-in-vr-glasses-float-in-neon-space-with-cables-attached-to-her-metaverse-avatar-concept.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .slide-container.active {
+  display: block;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffff;
+  background: #890873;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 50%;
+}
+
+#prev:hover,
+#next:hover{
+    background: #ee7bd3;
+}
+
+#prev{
+    left: 2rem;
+}
+#next{
+    right: 2rem;
+}
+
+@media(max-width:500px){
+    .container #prev{
+        top:60%;
+        left: 0;
+    }
+    .container #next{
+        top: 60%;
+        right: 0;
+    }
+
+    .container .slide-container .slide .content p{
+        font-size: 1.3rem;
+        width: 60%;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 7.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .container .slide-container .slide .content h3{
+        margin-left: 7.5rem;
+        font-size: 4rem;
+    }
+    .btn{
+        margin-left: 7.5rem;
+      
+    }
+}
